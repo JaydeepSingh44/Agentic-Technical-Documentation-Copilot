@@ -1,0 +1,62 @@
+# ==============================
+# LangChain
+# ==============================
+langchain
+langchain-core
+langchain-community
+langchain-qdrant
+
+# ==============================
+# Vector Database + Embeddings
+# ==============================
+qdrant-client
+fastembed
+
+# ==============================
+# Document Loaders
+# ==============================
+pypdf
+unstructured
+beautifulsoup4
+lxml
+
+# ==============================
+# Retrieval / Reranking
+# ==============================
+cohere
+
+# ==============================
+# LLM - Hugging Face / DeepSeek
+# ==============================
+huggingface_hub
+
+# ==============================
+# UI
+# ==============================
+streamlit
+
+# ==============================
+# Environment Variables
+# ==============================
+python-dotenv
+
+# ==============================
+# Evaluation
+# ==============================
+deepeval
+
+# ==============================
+# Observability
+# ==============================
+langfuse
+
+# ==============================
+# Tokenization
+# ==============================
+tiktoken
+
+# ==============================
+# Utilities
+# ==============================
+tqdm
+requests
