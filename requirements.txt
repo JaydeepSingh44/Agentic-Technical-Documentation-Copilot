@@ -21,6 +21,11 @@ beautifulsoup4
 lxml
 
 # ==============================
+# Text Chunking
+# ==============================
+langchain-experimental
+
+# ==============================
 # Retrieval / Reranking
 # ==============================
 cohere
@@ -29,6 +34,10 @@ cohere
 # LLM - Hugging Face / DeepSeek
 # ==============================
 huggingface_hub
+mistralai
+langchain-mistralai
+langchain-huggingface
+sentence-transformers
 
 # ==============================
 # UI
