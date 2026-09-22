@@ -69,3 +69,6 @@ tiktoken
 # ==============================
 tqdm
 requests
+
+beautifulsoup4
+duckduckgo-search
