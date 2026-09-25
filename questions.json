@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "group": "direct",
+    "question": "How do you define a path parameter in FastAPI?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/path-params/"
+    ]
+  },
+  {
+    "id": 2,
+    "group": "direct",
+    "question": "How can you specify a response status code in FastAPI?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/response-status-code/"
+    ]
+  },
+  {
+    "id": 3,
+    "group": "direct",
+    "question": "How do you declare a request body in FastAPI?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/body/"
+    ]
+  },
+  {
+    "id": 4,
+    "group": "direct",
+    "question": "How can you handle errors and return an HTTP error response in FastAPI?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/handling-errors/"
+    ]
+  },
+  {
+    "id": 5,
+    "group": "direct",
+    "question": "How do you add CORS middleware to a FastAPI application?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/cors/"
+    ]
+  },
+  {
+    "id": 6,
+    "group": "multi_passage",
+    "question": "How can I define a path parameter with numeric validation and also add metadata such as a title or description to that parameter?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/path-params/",
+      "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/"
+    ]
+  },
+  {
+    "id": 7,
+    "group": "multi_passage",
+    "question": "How can FastAPI validate query parameters while also applying string constraints such as minimum or maximum length?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/query-params/",
+      "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/"
+    ]
+  },
+  {
+    "id": 8,
+    "group": "multi_passage",
+    "question": "How can dependencies be declared for path operations, and how does FastAPI handle dependencies that themselves depend on other dependencies?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/dependencies/",
+      "https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies/",
+      "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/"
+    ]
+  },
+  {
+    "id": 9,
+    "group": "multi_passage",
+    "question": "How can FastAPI use a response model while also returning a specific HTTP status code?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/response-model/",
+      "https://fastapi.tiangolo.com/tutorial/response-status-code/"
+    ]
+  },
+  {
+    "id": 10,
+    "group": "multi_passage",
+    "question": "How can FastAPI's OAuth2 security flow be used with dependencies to protect an API endpoint?",
+    "expected_behavior": "answer",
+    "expected_sources": [
+      "https://fastapi.tiangolo.com/tutorial/security/",
+      "https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/",
+      "https://fastapi.tiangolo.com/tutorial/dependencies/"
+    ]
+  },
+  {
+    "id": 11,
+    "group": "adjacent_but_absent",
+    "question": "How do I connect FastAPI to a PostgreSQL database using SQLAlchemy?",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  },
+  {
+    "id": 12,
+    "group": "adjacent_but_absent",
+    "question": "How do I deploy a FastAPI application to AWS Lambda?",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  },
+  {
+    "id": 13,
+    "group": "adjacent_but_absent",
+    "question": "How can I add Redis caching to a FastAPI application?",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  },
+  {
+    "id": 14,
+    "group": "adjacent_but_absent",
+    "question": "How do I implement WebSocket endpoints in FastAPI?",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  },
+  {
+    "id": 15,
+    "group": "adjacent_but_absent",
+    "question": "How do I configure MongoDB with Motor for a FastAPI application?",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  },
+  {
+    "id": 16,
+    "group": "outside",
+    "question": "What is the capital of France?",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  },
+  {
+    "id": 17,
+    "group": "outside",
+    "question": "Explain how a convolutional neural network works.",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  },
+  {
+    "id": 18,
+    "group": "outside",
+    "question": "How does Python's garbage collector work internally?",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  },
+  {
+    "id": 19,
+    "group": "outside",
+    "question": "What is the difference between TCP and UDP?",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  },
+  {
+    "id": 20,
+    "group": "outside",
+    "question": "How do I create a React component using hooks?",
+    "expected_behavior": "abstain",
+    "expected_sources": []
+  }
+]

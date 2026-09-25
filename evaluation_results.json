@@ -1,0 +1,1324 @@
+{
+  "evaluated_at": "2026-09-25T21:11:18",
+  "total_questions": 20,
+  "evaluation_mode": "retrieval_only",
+  "llm_calls": 0,
+  "notes": [
+    "LLM generation was intentionally skipped.",
+    "Hugging Face inference credits were exhausted.",
+    "Threshold must be selected from measured retrieval results.",
+    "Answer quality for answerable questions still requires LLM/manual review."
+  ],
+  "threshold_sweep": [
+    {
+      "threshold": 0.3,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 0,
+      "abstain_total": 10,
+      "abstain_specificity": 0.0,
+      "balanced_retrieval_score": 0.5
+    },
+    {
+      "threshold": 0.35,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 0,
+      "abstain_total": 10,
+      "abstain_specificity": 0.0,
+      "balanced_retrieval_score": 0.5
+    },
+    {
+      "threshold": 0.4,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 0,
+      "abstain_total": 10,
+      "abstain_specificity": 0.0,
+      "balanced_retrieval_score": 0.5
+    },
+    {
+      "threshold": 0.45,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 1,
+      "abstain_total": 10,
+      "abstain_specificity": 0.1,
+      "balanced_retrieval_score": 0.55
+    },
+    {
+      "threshold": 0.5,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 1,
+      "abstain_total": 10,
+      "abstain_specificity": 0.1,
+      "balanced_retrieval_score": 0.55
+    },
+    {
+      "threshold": 0.55,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 2,
+      "abstain_total": 10,
+      "abstain_specificity": 0.2,
+      "balanced_retrieval_score": 0.6
+    },
+    {
+      "threshold": 0.6,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 2,
+      "abstain_total": 10,
+      "abstain_specificity": 0.2,
+      "balanced_retrieval_score": 0.6
+    },
+    {
+      "threshold": 0.65,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 5,
+      "abstain_total": 10,
+      "abstain_specificity": 0.5,
+      "balanced_retrieval_score": 0.75
+    },
+    {
+      "threshold": 0.7,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 5,
+      "abstain_total": 10,
+      "abstain_specificity": 0.5,
+      "balanced_retrieval_score": 0.75
+    },
+    {
+      "threshold": 0.75,
+      "answerable_pass": 10,
+      "answerable_total": 10,
+      "answerable_recall": 1.0,
+      "abstain_correct": 9,
+      "abstain_total": 10,
+      "abstain_specificity": 0.9,
+      "balanced_retrieval_score": 0.95
+    },
+    {
+      "threshold": 0.8,
+      "answerable_pass": 9,
+      "answerable_total": 10,
+      "answerable_recall": 0.9,
+      "abstain_correct": 10,
+      "abstain_total": 10,
+      "abstain_specificity": 1.0,
+      "balanced_retrieval_score": 0.95
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "group": "direct",
+      "question": "How do you define a path parameter in FastAPI?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/path-params/"
+      ],
+      "top_score": 0.8286599,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/path-params/",
+        "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/"
+      ],
+      "expected_source_urls_found": 1,
+      "num_expected_sources": 1,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "heading": "Path Parameters > Path parameters containing paths > OpenAPI support",
+          "chunk_id": "028411e416470478843308bd9f03cc6b",
+          "score": 0.8286599,
+          "passage": "FastAPI  \nAnd the docs would still work, although not adding any documentation telling that the parameter should contain a path."
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "heading": "Path Parameters",
+          "chunk_id": "36e12ab52792c3f6bc447f8a83f68643",
+          "score": 0.8244842,
+          "passage": "Documentation Section: Path Parameters\n\n¶  \nYou can declare path \"parameters\" or \"variables\" with the same syntax used by Python format strings:  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \napp  \n=  \nFastAPI  \n()  \n@app  \n. get  \n(  \n\"/items/  \n{item_id}  \n\"  \n)  \nasync  \ndef  \nread_item  \n(  \nitem_id  \n):  \nreturn  \n{  \n\"item_id\"  \n:  \nitem_id  \n}  \nThe value of the path parameter will be passed to your function as the argument ."
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "heading": "Path Parameters > Predefined values > Working with Python",
+          "chunk_id": "626e186ee81c32cdbbf88f2d84b9efbc",
+          "score": 0.8047067,
+          "passage": "Documentation Section: Path Parameters > Predefined values > Working with Python"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "heading": "Path Parameters > Path parameters containing paths > OpenAPI support",
+          "chunk_id": "450176da109605eeca7b8e31d050f824",
+          "score": 0.8001291,
+          "passage": "Documentation Section: Path Parameters > Path parameters containing paths > OpenAPI support\n\nOpenAPI support"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "heading": "Path Parameters and Numeric Validations > Declare metadata",
+          "chunk_id": "b2b929c491a3bd6b9f1969462ba4ca79",
+          "score": 0.79994094,
+          "passage": "¶  \nYou can declare all the same parameters as for . Query  \nFor example, to declare a metadata value for the path parameter you can type:  \ntitle  \nitem_id  \nPython 3.10+  \nfrom  \ntyping  \nimport  \nAnnotated  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nPath  \n,  \nQuery  \napp  \n=  \nFastAPI  \n()  \n@app  \n. get  \n(  \n\"/items/  \n{item_id}  \n\"  \n)  \nasync  \ndef  \nread_items  \n(  \nitem_id  \n:  \nAnnotated  \n[  \nint  \n,  \nPath  \n(  \ntitle  \n=  \n\"The ID of the item to get\"  \n)],  \nq  \n:  \nAnnotated  \n[  \nstr  \n|  \nNone  \n,  \nQuery  \n(  \nalias  \n=  \n\"item-query\"  \n)]  \n=  \nNone  \n,  \n):  \nresults  \n=  \n{  \n\"item_id\"  \n:  \nitem_id  \n}  \nif  \nq  \n:  \nresults  \n. update  \n({  \n\"q\"  \n:  \nq  \n})  \nreturn  \nresults  \n🤓 Other versions and variants  \nPython 3.10+ - non-Annotated  \nTip  \nPrefer to use the version if possible. Annotated  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nPath  \n,  \nQuery  \napp  \n=  \nFastAPI  \n()  \n@app  \n. get  \n(  \n\"/items/  \n{item_id}  \n\"  \n)  \nasync  \ndef  \nread_items  \n(  \nitem_id  \n:  \nint  \n=  \nPath  \n(  \ntitle  \n=  \n\"The ID of the item to get\"  \n),  \nq  \n:  \nstr  \n|  \nNone  \n=  \nQuery  \n(  \ndefault  \n=  \nNone  \n,  \nalias  \n=  \n\"item-query\"  \n),  \n):  \nresults  \n=  \n{  \n\"item_id\"  \n:  \nitem_id  \n}  \nif  \nq  \n:  \nresults  \n. update  \n({  \n\"q\"  \n:  \nq  \n})  \nreturn  \nresults  \nNote  \nA path parameter is always required as it has to be part of the path. Even if you declared it with or set a default value, it would not affect anything, it would still be always required."
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 2,
+      "group": "direct",
+      "question": "How can you specify a response status code in FastAPI?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/response-status-code/"
+      ],
+      "top_score": 0.84362566,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/response-status-code/",
+        "https://fastapi.tiangolo.com/tutorial/path-operation-configuration/"
+      ],
+      "expected_source_urls_found": 1,
+      "num_expected_sources": 1,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-status-code/",
+          "heading": "Response Status Code",
+          "chunk_id": "171d49b7957520f97e8f4e51c62c6f21",
+          "score": 0.84362566,
+          "passage": "Documentation Section: Response Status Code\n\n¶  \nThe same way you can specify a response model, you can also declare the HTTP status code used for the response with the parameter in any of the :  \nstatus_code  \npath operations  \n@app.get()  \n@app.post()  \n@app.put()  \n@app.delete()  \netc. Python 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \napp  \n=  \nFastAPI  \n()  \n@app  \n. post  \n(  \n\"/items/\"  \n,  \nstatus_code  \n=  \n201  \n)  \nasync  \ndef  \ncreate_item  \n(  \nname  \n:  \nstr  \n):  \nreturn  \n{  \n\"name\"  \n:  \nname  \n}  \nNote  \nNotice that is a parameter of the \"decorator\" method ( , , etc). Not of your , like all the parameters and body."
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-operation-configuration/",
+          "heading": "Path Operation Configuration > Response Status Code",
+          "chunk_id": "8ca2d16ee97fed5bfb40a107ba670002",
+          "score": 0.80794084,
+          "passage": "Documentation Section: Path Operation Configuration > Response Status Code\n\n¶  \nYou can define the (HTTP) to be used in the response of your . status_code  \npath operation  \nYou can pass directly the code, like . int  \n404  \nBut if you don't remember what each number code is for, you can use the shortcut constants in :  \nstatus  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nstatus  \nfrom  \npydantic  \nimport  \nBaseModel  \napp  \n=  \nFastAPI  \n()  \nclass  \nItem  \n(  \nBaseModel  \n):  \nname  \n:  \nstr  \ndescription  \n:  \nstr  \n|  \nNone  \n=  \nNone  \nprice  \n:  \nfloat  \ntax  \n:  \nfloat  \n|  \nNone  \n=  \nNone  \ntags  \n:  \nset  \n[  \nstr  \n]  \n=  \nset  \n()  \n@app  \n. post  \n(  \n\"/items/\"  \n,  \nstatus_code  \n=  \nstatus  \n. HTTP_201_CREATED  \n)  \nasync  \ndef  \ncreate_item  \n(  \nitem  \n:  \nItem  \n)  \n->  \nItem  \n:  \nreturn  \nitem  \nThat status code will be used in the response and will be added to the OpenAPI schema. Technical Details  \nYou could also use ."
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-status-code/",
+          "heading": "Response Status Code > Shortcut to remember the names",
+          "chunk_id": "5dae3acb4859ec6e1804186a0b3055e7",
+          "score": 0.7826273,
+          "passage": "Documentation Section: Response Status Code > Shortcut to remember the names\n\n¶  \nLet's see the previous example again:  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \napp  \n=  \nFastAPI  \n()  \n@app  \n. post  \n(  \n\"/items/\"  \n,  \nstatus_code  \n=  \n201  \n)  \nasync  \ndef  \ncreate_item  \n(  \nname  \n:  \nstr  \n):  \nreturn  \n{  \n\"name\"  \n:  \nname  \n}  \nis the status code for \"Created\". 201  \nBut you don't have to memorize what each of these codes mean."
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-operation-configuration/",
+          "heading": "Path Operation Configuration > Response description",
+          "chunk_id": "6e77c06046b68e2cb86221ab7f29d127",
+          "score": 0.77536416,
+          "passage": "path operation  \nSo, if you don't provide one, will automatically generate one of \"Successful response\". FastAPI"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-status-code/",
+          "heading": "Response Status Code",
+          "chunk_id": "c5ecbf270b99c6d2af2e914dc3d3a59f",
+          "score": 0.77434087,
+          "passage": "Documentation Section: Response Status Code\n\nResponse Status Code"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 3,
+      "group": "direct",
+      "question": "How do you declare a request body in FastAPI?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/body/"
+      ],
+      "top_score": 0.81828606,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/body/",
+        "https://fastapi.tiangolo.com/tutorial/body-multiple-params/"
+      ],
+      "expected_source_urls_found": 1,
+      "num_expected_sources": 1,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/body/",
+          "heading": "Request Body > Declare it as a parameter",
+          "chunk_id": "839b9312a948d7039911d39688288608",
+          "score": 0.81828606,
+          "passage": "Documentation Section: Request Body > Declare it as a parameter\n\nDeclare it as a parameter"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/body/",
+          "heading": "Request Body > Results",
+          "chunk_id": "544e4e1333f4493a21957cbb4a58b200",
+          "score": 0.816643,
+          "passage": "Documentation Section: Request Body > Results\n\n¶  \nWith just that Python type declaration, will:  \nFastAPI  \nRead the body of the request as JSON. Convert the corresponding types (if needed)."
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/body/",
+          "heading": "Request Body",
+          "chunk_id": "57fbdd17269dc8a7f626354b009c854f",
+          "score": 0.8102799,
+          "passage": "Documentation Section: Request Body\n\n¶  \nWhen you need to send data from a client (let's say, a browser) to your API, you send it as a . request body  \nA body is data sent by the client to your API. A body is the data your API sends to the client. request  \nresponse  \nYour API almost always has to send a body. But clients don't necessarily need to send all the time, sometimes they only request a path, maybe with some query parameters, but don't send a body. response  \nrequest bodies  \nTo declare a body, you use models with all their power and benefits. request  \nPydantic  \nNote  \nTo send data, you should use one of: (the most common), , or . POST  \nPUT  \nDELETE  \nPATCH  \nSending a body with a request has an undefined behavior in the specifications, nevertheless, it is supported by FastAPI, only for very complex/extreme use cases. GET  \nAs it is discouraged, the interactive docs with Swagger UI won't show the documentation for the body when using , and proxies in the middle might not support it."
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/body/",
+          "heading": "Request Body > Request body + path parameters",
+          "chunk_id": "4e3c246debabdeb84a4b5f921f2177a5",
+          "score": 0.80995274,
+          "passage": "Documentation Section: Request Body > Request body + path parameters\n\n¶  \nYou can declare path parameters and request body at the same time. will recognize that the function parameters that match path parameters should be , and that function parameters that are declared to be Pydantic models should be . FastAPI  \ntaken from the path  \ntaken from the request body  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \nfrom  \npydantic  \nimport  \nBaseModel  \nclass  \nItem  \n(  \nBaseModel  \n):  \nname  \n:  \nstr  \ndescription  \n:  \nstr  \n|  \nNone  \n=  \nNone  \nprice  \n:  \nfloat  \ntax  \n:  \nfloat  \n|  \nNone  \n=  \nNone  \napp  \n=  \nFastAPI  \n()  \n@app  \n. put  \n(  \n\"/items/  \n{item_id}  \n\"  \n)  \nasync  \ndef  \nupdate_item  \n(  \nitem_id  \n:  \nint  \n,  \nitem  \n:  \nItem  \n):  \nreturn  \n{  \n\"item_id\"  \n:  \nitem_id  \n,  \n**  \nitem  \n."
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/body-multiple-params/",
+          "heading": "",
+          "chunk_id": "c5bbfeb7c32debc85d4389b2b492f700",
+          "score": 0.7999929,
+          "passage": "¶  \nYou can add multiple body parameters to your , even though a request can only have a single body. path operation function  \nBut will handle it, give you the correct data in your function, and validate and document the correct schema in the . FastAPI  \npath operation  \nYou can also declare singular values to be received as part of the body. And you can instruct to embed the body in a key even when there is only a single parameter declared."
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 4,
+      "group": "direct",
+      "question": "How can you handle errors and return an HTTP error response in FastAPI?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/handling-errors/"
+      ],
+      "top_score": 0.82632697,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/handling-errors/"
+      ],
+      "expected_source_urls_found": 1,
+      "num_expected_sources": 1,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/handling-errors/",
+          "heading": "Handling Errors > Override the default exception handlers > Override the error handler",
+          "chunk_id": "325581cf43f04a797d92bf6172a27be2",
+          "score": 0.82632697,
+          "passage": "Documentation Section: Handling Errors > Override the default exception handlers > Override the error handler\n\nHTTPException  \n¶  \nThe same way, you can override the handler. HTTPException  \nFor example, you could want to return a plain text response instead of JSON for these errors:  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nHTTPException  \nfrom  \nfastapi.exceptions  \nimport  \nRequestValidationError  \nfrom  \nfastapi.responses  \nimport  \nPlainTextResponse  \nfrom  \nstarlette.exceptions  \nimport  \nHTTPException  \nas  \nStarletteHTTPException  \napp  \n=  \nFastAPI  \n()  \n@app  \n. exception_handler  \n(  \nStarletteHTTPException  \n)  \nasync  \ndef  \nhttp_exception_handler  \n(  \nrequest  \n,  \nexc  \n):  \nreturn  \nPlainTextResponse  \n(  \nstr  \n(  \nexc  \n. detail  \n),  \nstatus_code  \n=  \nexc  \n."
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/handling-errors/",
+          "heading": "",
+          "chunk_id": "8b29299a483720aec089bec8e952a694",
+          "score": 0.79942083,
+          "passage": "FastAPI  \n¶  \nIf you want to use the exception along with the same default exception handlers from , you can import and reuse the default exception handlers from :  \nFastAPI  \nfastapi.exception_handlers  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nHTTPException  \nfrom  \nfastapi.exception_handlers  \nimport  \n(  \nhttp_exception_handler  \n,  \nrequest_validation_exception_handler  \n,  \n)  \nfrom  \nfastapi.exceptions  \nimport  \nRequestValidationError  \nfrom  \nstarlette.exceptions  \nimport  \nHTTPException  \nas  \nStarletteHTTPException  \napp  \n=  \nFastAPI  \n()  \n@app  \n. exception_handler  \n(  \nStarletteHTTPException  \n)  \nasync  \ndef  \ncustom_http_exception_handler  \n(  \nrequest  \n,  \nexc  \n):  \nprint  \n(  \nf  \n\"OMG! An HTTP error!:  \n{  \nrepr  \n(  \nexc  \n)  \n}  \n\"  \n)  \nreturn  \nawait  \nhttp_exception_handler  \n(  \nrequest  \n,  \nexc  \n)  \n@app  \n. exception_handler  \n(  \nRequestValidationError  \n)  \nasync  \ndef  \nvalidation_exception_handler  \n(  \nrequest  \n,  \nexc  \n):  \nprint  \n(  \nf  \n\"OMG! The client sent invalid data!:  \n{  \nexc  \n}  \n\"  \n)  \nreturn  \nawait  \nrequest_validation_exception_handler  \n(  \nrequest  \n,  \nexc  \n)  \n@app  \n. get  \n(  \n\"/items/  \n{item_id}  \n\"  \n)  \nasync  \ndef  \nread_item  \n(  \nitem_id  \n:  \nint  \n):  \nif  \nitem_id  \n==  \n3  \n:  \nraise  \nHTTPException  \n(  \nstatus_code  \n=  \n418  \n,  \ndetail  \n=  \n\"Nope! I don't like 3.\"  \n)  \nreturn  \n{  \n\"item_id\"  \n:  \nitem_id  \n}"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/handling-errors/",
+          "heading": "Handling Errors > Use",
+          "chunk_id": "0d9e18f3c17326fc35daab840be2e483",
+          "score": 0.79842454,
+          "passage": "Documentation Section: Handling Errors > Use\n\nHTTPException  \n¶  \nTo return HTTP responses with errors to the client you use . HTTPException"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/handling-errors/",
+          "heading": "Handling Errors > Override the default exception handlers > Override request validation exceptions",
+          "chunk_id": "e6d46bc482e2c7f48305889a084362d0",
+          "score": 0.7978463,
+          "passage": "Documentation Section: Handling Errors > Override the default exception handlers > Override request validation exceptions\n\n¶  \nWhen a request contains invalid data, internally raises a . FastAPI  \nRequestValidationError  \nAnd it also includes a default exception handler for it. To override it, import the and use it with to decorate the exception handler. RequestValidationError  \n@app.exception_handler(RequestValidationError)  \nThe exception handler will receive a and the exception. Request  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nHTTPException  \nfrom  \nfastapi.exceptions  \nimport  \nRequestValidationError  \nfrom  \nfastapi.responses  \nimport  \nPlainTextResponse  \nfrom  \nstarlette.exceptions  \nimport  \nHTTPException  \nas  \nStarletteHTTPException  \napp  \n=  \nFastAPI  \n()  \n@app  \n. exception_handler  \n(  \nStarletteHTTPException  \n)  \nasync  \ndef  \nhttp_exception_handler  \n(  \nrequest  \n,  \nexc  \n):  \nreturn  \nPlainTextResponse  \n(  \nstr  \n(  \nexc  \n. detail  \n),  \nstatus_code  \n=  \nexc  \n."
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/handling-errors/",
+          "heading": "Handling Errors > Use > Import",
+          "chunk_id": "7a572125158524df4b8da1dbeec1e81d",
+          "score": 0.7825523,
+          "passage": "Documentation Section: Handling Errors > Use > Import\n\nHTTPException  \n¶  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nHTTPException  \napp  \n=  \nFastAPI  \n()  \nitems  \n=  \n{  \n\"foo\"  \n:  \n\"The Foo Wrestlers\"  \n}  \n@app  \n. get  \n(  \n\"/items/  \n{item_id}  \n\"  \n)  \nasync  \ndef  \nread_item  \n(  \nitem_id  \n:  \nstr  \n):  \nif  \nitem_id  \nnot  \nin  \nitems  \n:  \nraise  \nHTTPException  \n(  \nstatus_code  \n=  \n404  \n,  \ndetail  \n=  \n\"Item not found\"  \n)  \nreturn  \n{  \n\"item\"  \n:  \nitems  \n[  \nitem_id  \n]}"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 5,
+      "group": "direct",
+      "question": "How do you add CORS middleware to a FastAPI application?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/cors/"
+      ],
+      "top_score": 0.8118154,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/cors/",
+        "https://fastapi.tiangolo.com/tutorial/middleware/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/request-files/"
+      ],
+      "expected_source_urls_found": 1,
+      "num_expected_sources": 1,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/cors/",
+          "heading": "CORS (Cross-Origin Resource Sharing) > Use",
+          "chunk_id": "52815eb77273e60d95d8f5af9467844b",
+          "score": 0.8118154,
+          "passage": "CORSMiddleware  \n¶  \nYou can configure it in your application using the . FastAPI  \nCORSMiddleware  \nImport . CORSMiddleware  \nCreate a list of allowed origins (as strings). Add it as a \"middleware\" to your application. FastAPI  \nYou can also specify whether your backend allows:  \nCredentials (Authorization headers, Cookies, etc). Specific HTTP methods ( , ) or all of them with the wildcard . POST  \nPUT  \n\"*\"  \nSpecific HTTP headers or all of them with the wildcard . \"*\"  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \nfrom  \nfastapi.middleware.cors  \nimport  \nCORSMiddleware  \napp  \n=  \nFastAPI  \n()  \norigins  \n=  \n[  \n\"http://localhost.tiangolo.com\"  \n,  \n\"https://localhost.tiangolo.com\"  \n,  \n\"http://localhost\"  \n,  \n\"http://localhost:8080\"  \n,  \n]  \napp  \n. add_middleware  \n(  \nCORSMiddleware  \n,  \nallow_origins  \n=  \norigins  \n,  \nallow_credentials  \n=  \nTrue  \n,  \nallow_methods  \n=  \n[  \n\"*\"  \n],  \nallow_headers  \n=  \n[  \n\"*\"  \n],  \n)  \n@app  \n. get  \n(  \n\"/\"  \n)  \nasync  \ndef  \nmain  \n():  \nreturn  \n{  \n\"message\"  \n:  \n\"Hello World\"  \n}  \nThe default parameters used by the implementation are restrictive by default, so you'll need to explicitly enable particular origins, methods, or headers, in order for browsers to be permitted to use them in a Cross-Domain context. CORSMiddleware  \nThe following arguments are supported:  \n- A list of origins that should be permitted to make cross-origin requests. E.g."
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/middleware/",
+          "heading": "Middleware > Create a middleware",
+          "chunk_id": "763d7176f1c48b63adb9b7fee50ef81c",
+          "score": 0.7732248,
+          "passage": "Documentation Section: Middleware > Create a middleware\n\n¶  \nTo create a middleware you use the decorator on top of a function. @app.middleware(\"http\")  \nThe middleware function receives:  \nThe . request  \nA function that will receive the as a parameter. call_next  \nrequest  \nThis function will pass the to the corresponding . request  \npath operation  \nThen it returns the generated by the corresponding . response  \npath operation  \nYou can then further modify the before returning it. response  \nPython 3.10+  \nimport  \ntime  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nRequest  \napp  \n=  \nFastAPI  \n()  \n@app  \n. middleware  \n(  \n\"http\"  \n)  \nasync  \ndef  \nadd_process_time_header  \n(  \nrequest  \n:  \nRequest  \n,  \ncall_next  \n):  \nstart_time  \n=  \ntime  \n. perf_counter  \n()  \nresponse  \n=  \nawait  \ncall_next  \n(  \nrequest  \n)  \nprocess_time  \n=  \ntime  \n. perf_counter  \n()  \n-  \nstart_time  \nresponse  \n. headers  \n[  \n\"X-Process-Time\"  \n]  \n=  \nstr  \n(  \nprocess_time  \n)  \nreturn  \nresponse  \nTip  \nKeep in mind that custom proprietary headers can be added . using the prefix  \nX-  \nBut if you have custom headers that you want a client in a browser to be able to see, you need to add them to your CORS configurations ( ) using the parameter documented in . CORS (Cross-Origin Resource Sharing)  \nexpose_headers  \nStarlette's CORS docs  \nTechnical Details  \nYou could also use . from starlette.requests import Request  \nprovides it as a convenience for you, the developer."
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/cors/",
+          "heading": "",
+          "chunk_id": "3d61336faf8e1fd86cb99d53b440097b",
+          "score": 0.742954,
+          "passage": "CORS  \nMozilla CORS documentation  \nTechnical Details  \nYou could also use . from starlette.middleware.cors import CORSMiddleware  \nprovides several middlewares in just as a convenience for you, the developer. But most of the available middlewares come directly from Starlette. FastAPI  \nfastapi.middleware  \nBack to top"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Add an output model",
+          "chunk_id": "92b0fc604415266655392c04accf3b1d",
+          "score": 0.7399664,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+          "heading": "Request Files > What is \"Form Data\"",
+          "chunk_id": "0e5369e601079876696e35c5c6dff09e",
+          "score": 0.7399664,
+          "passage": "FastAPI"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 6,
+      "group": "multi_passage",
+      "question": "How can I define a path parameter with numeric validation and also add metadata such as a title or description to that parameter?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/path-params/",
+        "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/"
+      ],
+      "top_score": 0.9079951,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/"
+      ],
+      "expected_source_urls_found": 1,
+      "num_expected_sources": 2,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "heading": "Path Parameters and Numeric Validations > Declare metadata",
+          "chunk_id": "300d654e9c63720eaca08d5c033ade60",
+          "score": 0.9079951,
+          "passage": "Documentation Section: Path Parameters and Numeric Validations > Declare metadata"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "heading": "Path Parameters and Numeric Validations > Declare metadata",
+          "chunk_id": "03eb1c09a2334f564d5247315c983a10",
+          "score": 0.8987918,
+          "passage": "Documentation Section: Path Parameters and Numeric Validations > Declare metadata\n\nDeclare metadata"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "heading": "Path Parameters and Numeric Validations",
+          "chunk_id": "e8b3cc1a12c20b6b2a75c55b162ceb59",
+          "score": 0.8810706,
+          "passage": "Documentation Section: Path Parameters and Numeric Validations\n\nPath Parameters and Numeric Validations"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "heading": "Path Parameters and Numeric Validations > Recap",
+          "chunk_id": "e470af9a59e8f990d3b378be510285af",
+          "score": 0.8555075,
+          "passage": "Documentation Section: Path Parameters and Numeric Validations > Recap\n\nRecap"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "heading": "Path Parameters and Numeric Validations",
+          "chunk_id": "f847eefd5e477d1990eacb52faf24ed5",
+          "score": 0.83292174,
+          "passage": "Documentation Section: Path Parameters and Numeric Validations\n\n¶  \nIn the same way that you can declare more validations and metadata for query parameters with , you can declare the same type of validations and metadata for path parameters with . Query  \nPath"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 7,
+      "group": "multi_passage",
+      "question": "How can FastAPI validate query parameters while also applying string constraints such as minimum or maximum length?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/query-params/",
+        "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/"
+      ],
+      "top_score": 0.83764416,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/"
+      ],
+      "expected_source_urls_found": 1,
+      "num_expected_sources": 2,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "heading": "Query Parameters and String Validations > Add more validations",
+          "chunk_id": "a9028e3e96a5d869feee24650f0d3215",
+          "score": 0.83764416,
+          "passage": "Documentation Section: Query Parameters and String Validations > Add more validations\n\n¶  \nYou can also add a parameter :  \nmin_length  \nPython 3.10+  \nfrom  \ntyping  \nimport  \nAnnotated  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nQuery  \napp  \n=  \nFastAPI  \n()  \n@app  \n. get  \n(  \n\"/items/\"  \n)  \nasync  \ndef  \nread_items  \n(  \nq  \n:  \nAnnotated  \n[  \nstr  \n|  \nNone  \n,  \nQuery  \n(  \nmin_length  \n=  \n3  \n,  \nmax_length  \n=  \n50  \n)]  \n=  \nNone  \n,  \n):  \nresults  \n=  \n{  \n\"items\"  \n:  \n[{  \n\"item_id\"  \n:  \n\"Foo\"  \n},  \n{  \n\"item_id\"  \n:  \n\"Bar\"  \n}]}  \nif  \nq  \n:  \nresults  \n."
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "heading": "Query Parameters and String Validations > Exclude parameters from OpenAPI",
+          "chunk_id": "b49c64acc930992cfab6752b6a0c77e0",
+          "score": 0.82353055,
+          "passage": "Documentation Section: Query Parameters and String Validations > Exclude parameters from OpenAPI\n\nExclude parameters from OpenAPI"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "heading": "Query Parameters and String Validations > Add regular expressions",
+          "chunk_id": "8d904669fbd600794766c13b84437fad",
+          "score": 0.80689806,
+          "passage": "Documentation Section: Query Parameters and String Validations > Add regular expressions\n\n¶  \nYou can define a that the parameter should match:  \nregular expression  \npattern  \nPython 3.10+  \nfrom  \ntyping  \nimport  \nAnnotated  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nQuery  \napp  \n=  \nFastAPI  \n()  \n@app  \n. get  \n(  \n\"/items/\"  \n)  \nasync  \ndef  \nread_items  \n(  \nq  \n:  \nAnnotated  \n[  \nstr  \n|  \nNone  \n,  \nQuery  \n(  \nmin_length  \n=  \n3  \n,  \nmax_length  \n=  \n50  \n,  \npattern  \n=  \n\"^fixedquery$\"  \n)  \n]  \n=  \nNone  \n,  \n):  \nresults  \n=  \n{  \n\"items\"  \n:  \n[{  \n\"item_id\"  \n:  \n\"Foo\"  \n},  \n{  \n\"item_id\"  \n:  \n\"Bar\"  \n}]}  \nif  \nq  \n:  \nresults  \n. update  \n({  \n\"q\"  \n:  \nq  \n})  \nreturn  \nresults  \n🤓 Other versions and variants  \nPython 3.10+ - non-Annotated  \nTip  \nPrefer to use the version if possible. Annotated  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nQuery  \napp  \n=  \nFastAPI  \n()  \n@app  \n. get  \n(  \n\"/items/\"  \n)  \nasync  \ndef  \nread_items  \n(  \nq  \n:  \nstr  \n|  \nNone  \n=  \nQuery  \n(  \ndefault  \n=  \nNone  \n,  \nmin_length  \n=  \n3  \n,  \nmax_length  \n=  \n50  \n,  \npattern  \n=  \n\"^fixedquery$\"  \n),  \n):  \nresults  \n=  \n{  \n\"items\"  \n:  \n[{  \n\"item_id\"  \n:  \n\"Foo\"  \n},  \n{  \n\"item_id\"  \n:  \n\"Bar\"  \n}]}  \nif  \nq  \n:  \nresults  \n. update  \n({  \n\"q\"  \n:  \nq  \n})  \nreturn  \nresults  \nThis specific regular expression pattern checks that the received parameter value:  \n: starts with the following characters, doesn't have characters before. ^  \n: has the exact value ."
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "heading": "Query Parameters and String Validations",
+          "chunk_id": "c64ab238095b3d5c1ff4ab617df09827",
+          "score": 0.80462354,
+          "passage": "Documentation Section: Query Parameters and String Validations\n\nQuery Parameters and String Validations"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "heading": "Query Parameters and String Validations > Required parameters",
+          "chunk_id": "06f7eab1024f3a5617f1b5c18fa7cccb",
+          "score": 0.80221516,
+          "passage": "Documentation Section: Query Parameters and String Validations > Required parameters\n\nRequired parameters"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 8,
+      "group": "multi_passage",
+      "question": "How can dependencies be declared for path operations, and how does FastAPI handle dependencies that themselves depend on other dependencies?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/"
+      ],
+      "top_score": 0.88369185,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies/"
+      ],
+      "expected_source_urls_found": 2,
+      "num_expected_sources": 3,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/",
+          "heading": "",
+          "chunk_id": "699c28985ab81de4d462d55e330b1ec4",
+          "score": 0.88369185,
+          "passage": "¶  \nNext we will see how to add dependencies to the whole application, so that they apply to each . FastAPI  \npath operation  \nBack to top"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "heading": "Dependencies > To or not to",
+          "chunk_id": "92af9be7e555d1baa4cb40264a0e1936",
+          "score": 0.8360419,
+          "passage": "Documentation Section: Dependencies > To or not to\n\nasync  \nasync  \n¶  \nAs dependencies will also be called by (the same as your ), the same rules apply while defining your functions. FastAPI  \npath operation functions  \nYou can use or normal . async def  \ndef  \nAnd you can declare dependencies with inside of normal , or dependencies inside of , etc. async def  \ndef  \npath operation functions  \ndef  \nasync def  \npath operation functions  \nIt doesn't matter. will know what to do."
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies/",
+          "heading": "Global Dependencies",
+          "chunk_id": "f74da0c0ad1327fb86d1fcb100caba6a",
+          "score": 0.81731254,
+          "passage": "¶  \nFor some types of applications you might want to add dependencies to the whole application. Similar to the way you can , you can add them to the application. add to the  \ndependencies  \npath operation decorators  \nFastAPI  \nIn that case, they will be applied to all the in the application:  \npath operations  \nPython 3.10+  \nfrom  \ntyping  \nimport  \nAnnotated  \nfrom  \nfastapi  \nimport  \nDepends  \n,  \nFastAPI  \n,  \nHeader  \n,  \nHTTPException  \nasync  \ndef  \nverify_token  \n(  \nx_token  \n:  \nAnnotated  \n[  \nstr  \n,  \nHeader  \n()]):  \nif  \nx_token  \n!=  \n\"fake-super-secret-token\"  \n:  \nraise  \nHTTPException  \n(  \nstatus_code  \n=  \n400  \n,  \ndetail  \n=  \n\"X-Token header invalid\"  \n)  \nasync  \ndef  \nverify_key  \n(  \nx_key  \n:  \nAnnotated  \n[  \nstr  \n,  \nHeader  \n()]):  \nif  \nx_key  \n!=  \n\"fake-super-secret-key\"  \n:  \nraise  \nHTTPException  \n(  \nstatus_code  \n=  \n400  \n,  \ndetail  \n=  \n\"X-Key header invalid\"  \n)  \nreturn  \nx_key  \napp  \n=  \nFastAPI  \n(  \ndependencies  \n=  \n[  \nDepends  \n(  \nverify_token  \n),  \nDepends  \n(  \nverify_key  \n)])  \n@app  \n. get  \n(  \n\"/items/\"  \n)  \nasync  \ndef  \nread_items  \n():  \nreturn  \n[{  \n\"item\"  \n:  \n\"Portal Gun\"  \n},  \n{  \n\"item\"  \n:  \n\"Plumbus\"  \n}]  \n@app  \n. get  \n(  \n\"/users/\"  \n)  \nasync  \ndef  \nread_users  \n():  \nreturn  \n[{  \n\"username\"  \n:  \n\"Rick\"  \n},  \n{  \n\"username\"  \n:  \n\"Morty\"  \n}]  \n🤓 Other versions and variants  \nPython 3.10+ - non-Annotated  \nTip  \nPrefer to use the version if possible. Annotated  \nfrom  \nfastapi  \nimport"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/",
+          "heading": "Dependencies in path operation decorators > Add to the",
+          "chunk_id": "55e582fc3a16dc86b5d972b49d175e1c",
+          "score": 0.80963165,
+          "passage": "Documentation Section: Dependencies in path operation decorators > Add to the"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/",
+          "heading": "Dependencies in path operation decorators > Global Dependencies",
+          "chunk_id": "e8c8acda29525a44d005738db01cc429",
+          "score": 0.80251145,
+          "passage": "Documentation Section: Dependencies in path operation decorators > Global Dependencies\n\nGlobal Dependencies"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 9,
+      "group": "multi_passage",
+      "question": "How can FastAPI use a response model while also returning a specific HTTP status code?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/response-status-code/"
+      ],
+      "top_score": 0.8238021,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/response-status-code/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/path-operation-configuration/"
+      ],
+      "expected_source_urls_found": 2,
+      "num_expected_sources": 2,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-status-code/",
+          "heading": "Response Status Code",
+          "chunk_id": "171d49b7957520f97e8f4e51c62c6f21",
+          "score": 0.8238021,
+          "passage": "Documentation Section: Response Status Code\n\n¶  \nThe same way you can specify a response model, you can also declare the HTTP status code used for the response with the parameter in any of the :  \nstatus_code  \npath operations  \n@app.get()  \n@app.post()  \n@app.put()  \n@app.delete()  \netc. Python 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \napp  \n=  \nFastAPI  \n()  \n@app  \n. post  \n(  \n\"/items/\"  \n,  \nstatus_code  \n=  \n201  \n)  \nasync  \ndef  \ncreate_item  \n(  \nname  \n:  \nstr  \n):  \nreturn  \n{  \n\"name\"  \n:  \nname  \n}  \nNote  \nNotice that is a parameter of the \"decorator\" method ( , , etc). Not of your , like all the parameters and body."
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Return Type and Data Filtering > FastAPI Data Filtering",
+          "chunk_id": "488991350ff91823544a459933c7bb86",
+          "score": 0.8056671,
+          "passage": "Documentation Section: Response Model - Return Type > Return Type and Data Filtering > FastAPI Data Filtering\n\nFastAPI Data Filtering"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-operation-configuration/",
+          "heading": "Path Operation Configuration > Response Status Code",
+          "chunk_id": "8ca2d16ee97fed5bfb40a107ba670002",
+          "score": 0.7816298,
+          "passage": "Documentation Section: Path Operation Configuration > Response Status Code\n\n¶  \nYou can define the (HTTP) to be used in the response of your . status_code  \npath operation  \nYou can pass directly the code, like . int  \n404  \nBut if you don't remember what each number code is for, you can use the shortcut constants in :  \nstatus  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \n,  \nstatus  \nfrom  \npydantic  \nimport  \nBaseModel  \napp  \n=  \nFastAPI  \n()  \nclass  \nItem  \n(  \nBaseModel  \n):  \nname  \n:  \nstr  \ndescription  \n:  \nstr  \n|  \nNone  \n=  \nNone  \nprice  \n:  \nfloat  \ntax  \n:  \nfloat  \n|  \nNone  \n=  \nNone  \ntags  \n:  \nset  \n[  \nstr  \n]  \n=  \nset  \n()  \n@app  \n. post  \n(  \n\"/items/\"  \n,  \nstatus_code  \n=  \nstatus  \n. HTTP_201_CREATED  \n)  \nasync  \ndef  \ncreate_item  \n(  \nitem  \n:  \nItem  \n)  \n->  \nItem  \n:  \nreturn  \nitem  \nThat status code will be used in the response and will be added to the OpenAPI schema. Technical Details  \nYou could also use ."
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Other Return Type Annotations > Annotate a Response Subclass",
+          "chunk_id": "58508a8b315ec0291fddbf6d5e304204",
+          "score": 0.77150923,
+          "passage": "Documentation Section: Response Model - Return Type > Other Return Type Annotations > Annotate a Response Subclass\n\n¶  \nYou can also use a subclass of in the type annotation:  \nResponse  \nPython 3.10+  \nfrom  \nfastapi  \nimport  \nFastAPI  \nfrom  \nfastapi.responses  \nimport  \nRedirectResponse  \napp  \n=  \nFastAPI  \n()  \n@app  \n. get  \n(  \n\"/teleport\"  \n)  \nasync  \ndef  \nget_teleport  \n()  \n->  \nRedirectResponse  \n:  \nreturn  \nRedirectResponse  \n(  \nurl  \n=  \n\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\"  \n)  \nThis will also work because is a subclass of , and FastAPI will automatically handle this simple case."
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Parameter > Priority",
+          "chunk_id": "c72d402af79cccd2613d9ca250f37835",
+          "score": 0.76871145,
+          "passage": "Documentation Section: Response Model - Return Type > Parameter > Priority\n\nresponse_model  \n¶  \nIf you declare both a return type and a , the will take priority and be used by FastAPI. response_model  \nresponse_model  \nThis way you can add correct type annotations to your functions even when you are returning a type different than the response model, to be used by the editor and tools like mypy. And still you can have FastAPI do the data validation, documentation, etc."
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 10,
+      "group": "multi_passage",
+      "question": "How can FastAPI's OAuth2 security flow be used with dependencies to protect an API endpoint?",
+      "expected_behavior": "answer",
+      "expected_sources": [
+        "https://fastapi.tiangolo.com/tutorial/security/",
+        "https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/"
+      ],
+      "top_score": 0.7549748,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/",
+        "https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/",
+        "https://fastapi.tiangolo.com/tutorial/middleware/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/request-files/"
+      ],
+      "expected_source_urls_found": 1,
+      "num_expected_sources": 3,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/",
+          "heading": "",
+          "chunk_id": "699c28985ab81de4d462d55e330b1ec4",
+          "score": 0.7549748,
+          "passage": "¶  \nNext we will see how to add dependencies to the whole application, so that they apply to each . FastAPI  \npath operation  \nBack to top"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/security/simple-oauth2/",
+          "heading": "Simple OAuth2 with Password and Bearer > Code to get the and",
+          "chunk_id": "f525a63ecf72d5bf15242ec387b66b92",
+          "score": 0.74071276,
+          "passage": "username  \npassword  \n¶  \nNow let's use the utilities provided by to handle this. FastAPI  \nOAuth2PasswordRequestForm  \n¶  \nFirst, import , and use it as a dependency with in the for :  \nOAuth2PasswordRequestForm  \nDepends  \npath operation  \n/token  \nPython 3.10+  \nfrom  \ntyping  \nimport  \nAnnotated  \nfrom  \nfastapi  \nimport  \nDepends  \n,  \nFastAPI  \n,  \nHTTPException  \n,  \nstatus  \nfrom  \nfastapi.security  \nimport  \nOAuth2PasswordBearer  \n,  \nOAuth2PasswordRequestForm  \nfrom  \npydantic  \nimport  \nBaseModel  \nfake_users_db  \n=  \n{  \n\"johndoe\"  \n:  \n{  \n\"username\"  \n:  \n\"johndoe\"  \n,  \n\"full_name\"  \n:  \n\"John Doe\"  \n,  \n\"email\"  \n:  \n\"johndoe@example.com\"  \n,  \n\"hashed_password\"  \n:  \n\"fakehashedsecret\"  \n,  \n\"disabled\"  \n:  \nFalse  \n,  \n},  \n\"alice\"  \n:  \n{  \n\"username\"  \n:  \n\"alice\"  \n,  \n\"full_name\"  \n:  \n\"Alice Wonderson\"  \n,  \n\"email\"  \n:  \n\"alice@example.com\"  \n,  \n\"hashed_password\"  \n:  \n\"fakehashedsecret2\"  \n,  \n\"disabled\"  \n:  \nTrue  \n,  \n},  \n}  \napp  \n=  \nFastAPI  \n()  \ndef  \nfake_hash_password  \n(  \npassword  \n:  \nstr  \n):  \nreturn  \n\"fakehashed\"  \n+  \npassword  \noauth2_scheme  \n=  \nOAuth2PasswordBearer  \n(  \ntokenUrl  \n=  \n\"token\"  \n)  \nclass  \nUser  \n(  \nBaseModel  \n):  \nusername  \n:  \nstr  \nemail  \n:  \nstr  \n|  \nNone  \n=  \nNone  \nfull_name  \n:  \nstr  \n|  \nNone  \n=  \nNone  \ndisabled  \n:  \nbool  \n|  \nNone  \n=  \nNone  \nclass  \nUserInDB  \n(  \nUser  \n):  \nhashed_password  \n:  \nstr  \ndef  \nget_user  \n(  \ndb  \n,  \nusername  \n:  \nstr  \n):  \nif  \nusername  \nin  \ndb"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/middleware/",
+          "heading": "Middleware > Create a middleware",
+          "chunk_id": "20971a2cdebaa85f6f658db38fe79c6d",
+          "score": 0.7393013,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Add an output model",
+          "chunk_id": "92b0fc604415266655392c04accf3b1d",
+          "score": 0.73930126,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+          "heading": "Request Files > What is \"Form Data\"",
+          "chunk_id": "0e5369e601079876696e35c5c6dff09e",
+          "score": 0.73930126,
+          "passage": "FastAPI"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 11,
+      "group": "adjacent_but_absent",
+      "question": "How do I connect FastAPI to a PostgreSQL database using SQLAlchemy?",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.7384474,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/first-steps/",
+        "https://fastapi.tiangolo.com/tutorial/middleware/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/request-files/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/first-steps/",
+          "heading": "",
+          "chunk_id": "75beeb89d93e0ae93627334b9ada1ca6",
+          "score": 0.7384474,
+          "passage": "¶  \nImport . FastAPI  \nCreate an instance. app  \nWrite a using decorators like ."
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/middleware/",
+          "heading": "Middleware > Create a middleware",
+          "chunk_id": "20971a2cdebaa85f6f658db38fe79c6d",
+          "score": 0.737018,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "heading": "Dependencies",
+          "chunk_id": "aaa3271dfae32f3de25fd3c089ec4833",
+          "score": 0.737018,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Add an output model",
+          "chunk_id": "92b0fc604415266655392c04accf3b1d",
+          "score": 0.7370179,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+          "heading": "Request Files > What is \"Form Data\"",
+          "chunk_id": "0e5369e601079876696e35c5c6dff09e",
+          "score": 0.7370179,
+          "passage": "FastAPI"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 12,
+      "group": "adjacent_but_absent",
+      "question": "How do I deploy a FastAPI application to AWS Lambda?",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.7728716,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/middleware/",
+        "https://fastapi.tiangolo.com/tutorial/request-files/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/first-steps/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/middleware/",
+          "heading": "Middleware > Create a middleware",
+          "chunk_id": "20971a2cdebaa85f6f658db38fe79c6d",
+          "score": 0.7728716,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+          "heading": "Request Files > What is \"Form Data\"",
+          "chunk_id": "0e5369e601079876696e35c5c6dff09e",
+          "score": 0.7728716,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Add an output model",
+          "chunk_id": "92b0fc604415266655392c04accf3b1d",
+          "score": 0.7728716,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "heading": "Dependencies",
+          "chunk_id": "aaa3271dfae32f3de25fd3c089ec4833",
+          "score": 0.7728716,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/first-steps/",
+          "heading": "",
+          "chunk_id": "75beeb89d93e0ae93627334b9ada1ca6",
+          "score": 0.76135445,
+          "passage": "¶  \nImport . FastAPI  \nCreate an instance. app  \nWrite a using decorators like ."
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 13,
+      "group": "adjacent_but_absent",
+      "question": "How can I add Redis caching to a FastAPI application?",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.721852,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/middleware/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/request-files/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/middleware/",
+          "heading": "Middleware > Create a middleware",
+          "chunk_id": "20971a2cdebaa85f6f658db38fe79c6d",
+          "score": 0.721852,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "heading": "Dependencies",
+          "chunk_id": "aaa3271dfae32f3de25fd3c089ec4833",
+          "score": 0.72185194,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+          "heading": "Request Files > What is \"Form Data\"",
+          "chunk_id": "0e5369e601079876696e35c5c6dff09e",
+          "score": 0.72185194,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Add an output model",
+          "chunk_id": "92b0fc604415266655392c04accf3b1d",
+          "score": 0.72185194,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/",
+          "heading": "",
+          "chunk_id": "699c28985ab81de4d462d55e330b1ec4",
+          "score": 0.7183868,
+          "passage": "¶  \nNext we will see how to add dependencies to the whole application, so that they apply to each . FastAPI  \npath operation  \nBack to top"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 14,
+      "group": "adjacent_but_absent",
+      "question": "How do I implement WebSocket endpoints in FastAPI?",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.7405629,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/request-files/",
+        "https://fastapi.tiangolo.com/tutorial/middleware/",
+        "https://fastapi.tiangolo.com/tutorial/path-params/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "heading": "Dependencies",
+          "chunk_id": "aaa3271dfae32f3de25fd3c089ec4833",
+          "score": 0.7405629,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Add an output model",
+          "chunk_id": "92b0fc604415266655392c04accf3b1d",
+          "score": 0.7405629,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+          "heading": "Request Files > What is \"Form Data\"",
+          "chunk_id": "0e5369e601079876696e35c5c6dff09e",
+          "score": 0.7405629,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/middleware/",
+          "heading": "Middleware > Create a middleware",
+          "chunk_id": "20971a2cdebaa85f6f658db38fe79c6d",
+          "score": 0.7405628,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "heading": "Path Parameters > Data",
+          "chunk_id": "9e43b9d909b7c4fc00b759a5fada469a",
+          "score": 0.72416806,
+          "passage": "FastAPI  \n\"parsing\""
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 15,
+      "group": "adjacent_but_absent",
+      "question": "How do I configure MongoDB with Motor for a FastAPI application?",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.7036279,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/request-files/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/middleware/",
+        "https://fastapi.tiangolo.com/tutorial/query-params/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+          "heading": "Request Files > What is \"Form Data\"",
+          "chunk_id": "0e5369e601079876696e35c5c6dff09e",
+          "score": 0.7036279,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Add an output model",
+          "chunk_id": "92b0fc604415266655392c04accf3b1d",
+          "score": 0.7036279,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "heading": "Dependencies",
+          "chunk_id": "aaa3271dfae32f3de25fd3c089ec4833",
+          "score": 0.7036278,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/middleware/",
+          "heading": "Middleware > Create a middleware",
+          "chunk_id": "20971a2cdebaa85f6f658db38fe79c6d",
+          "score": 0.70362777,
+          "passage": "FastAPI"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "heading": "Query Parameters > Optional parameters",
+          "chunk_id": "c264e0ca81b10f5dd3c366751ca4d7ad",
+          "score": 0.6896247,
+          "passage": "FastAPI  \nitem_id  \nq"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 16,
+      "group": "outside",
+      "question": "What is the capital of France?",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.44992357,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/cors/",
+        "https://fastapi.tiangolo.com/tutorial/handling-errors/",
+        "https://fastapi.tiangolo.com/tutorial/request-forms/",
+        "https://fastapi.tiangolo.com/tutorial/request-files/",
+        "https://fastapi.tiangolo.com/tutorial/path-operation-configuration/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/cors/",
+          "heading": "CORS (Cross-Origin Resource Sharing) > Use > Simple requests",
+          "chunk_id": "730eae6a04fb9d03d94f4734f858ed21",
+          "score": 0.44992357,
+          "passage": "Origin"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/handling-errors/",
+          "heading": "Handling Errors > Install custom exception handlers",
+          "chunk_id": "6236570e9611c4db26a5479311089457",
+          "score": 0.40117145,
+          "passage": "There goes a rainbow...\"  \n}  \nTechnical Details  \nYou could also use and . from starlette.requests import Request  \nfrom starlette.responses import JSONResponse  \nprovides the same as just as a convenience for you, the developer. But most of the available responses come directly from Starlette. The same with . FastAPI  \nstarlette.responses  \nfastapi.responses  \nRequest"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-forms/",
+          "heading": "Form Data > Define parameters",
+          "chunk_id": "771bc466cf26c8d3083e37c8614ac78c",
+          "score": 0.39863214,
+          "passage": "Form"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+          "heading": "Request Files > Multiple File Uploads",
+          "chunk_id": "cd8dc336db5ec575d62cb9d05bee5eec",
+          "score": 0.39354628,
+          "passage": ". get  \n(  \n\"/\"  \n)  \nasync  \ndef  \nmain  \n():  \ncontent  \n=  \n\"\"\"  \n<body>  \n<form action=\"/files/\" enctype=\"multipart/form-data\" method=\"post\">  \n<input name=\"files\" type=\"file\" multiple>  \n<input type=\"submit\">  \n</form>  \n<form action=\"/uploadfiles/\" enctype=\"multipart/form-data\" method=\"post\">  \n<input name=\"files\" type=\"file\" multiple>  \n<input type=\"submit\">  \n</form>  \n</body>  \n\"\"\"  \nreturn  \nHTMLResponse  \n(  \ncontent  \n=  \ncontent  \n)  \nYou will receive, as declared, a of or s. list  \nbytes  \nUploadFile  \nTechnical Details  \nYou could also use . from starlette.responses import HTMLResponse  \nprovides the same as just as a convenience for you, the developer. But most of the available responses come directly from Starlette."
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-operation-configuration/",
+          "heading": "Path Operation Configuration > Response Status Code",
+          "chunk_id": "c5c626d439706136632ea0ae3c8fca60",
+          "score": 0.39157385,
+          "passage": "from starlette import status  \nprovides the same as just as a convenience for you, the developer. But it comes directly from Starlette. FastAPI  \nstarlette.status  \nfastapi.status"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 17,
+      "group": "outside",
+      "question": "Explain how a convolutional neural network works.",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.63732433,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/path-params/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "heading": "Path Parameters > Predefined values > Declare a",
+          "chunk_id": "24ffb9d27063c868d58ba132523794e4",
+          "score": 0.63732433,
+          "passage": "alexnet  \n:  \nreturn  \n{  \n\"model_name\"  \n:  \nmodel_name  \n,  \n\"message\"  \n:  \n\"Deep Learning FTW!\"  \n}  \nif  \nmodel_name  \n. value  \n==  \n\"lenet\"  \n:  \nreturn  \n{  \n\"model_name\"  \n:  \nmodel_name  \n,  \n\"message\"  \n:  \n\"LeCNN all the images\"  \n}  \nreturn  \n{  \n\"model_name\"  \n:  \nmodel_name  \n,  \n\"message\"  \n:  \n\"Have some residuals\"  \n}"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "heading": "Path Parameters > Predefined values > Working with Python",
+          "chunk_id": "71139c3cbf2edadb9775f40b9791ada0",
+          "score": 0.63241124,
+          "passage": "alexnet  \n:  \nreturn  \n{  \n\"model_name\"  \n:  \nmodel_name  \n,  \n\"message\"  \n:  \n\"Deep Learning FTW!\"  \n}  \nif  \nmodel_name  \n. value  \n==  \n\"lenet\"  \n:  \nreturn  \n{  \n\"model_name\"  \n:  \nmodel_name  \n,  \n\"message\"  \n:  \n\"LeCNN all the images\"  \n}  \nreturn  \n{  \n\"model_name\"  \n:  \nmodel_name  \n,  \n\"message\"  \n:  \n\"Have some residuals\"  \n}  \nIn your client you will get a JSON response like:  \n{  \n\"model_name\"  \n:  \n\"alexnet\"  \n,  \n\"message\"  \n:  \n\"Deep Learning FTW!\"  \n}"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "heading": "Path Parameters > Predefined values > Create an class",
+          "chunk_id": "3d8e331c04b1e259f13c8fba8547dcdc",
+          "score": 0.62918293,
+          "passage": "alexnet  \n:  \nreturn  \n{  \n\"model_name\"  \n:  \nmodel_name  \n,  \n\"message\"  \n:  \n\"Deep Learning FTW!\"  \n}  \nif  \nmodel_name  \n. value  \n==  \n\"lenet\"  \n:  \nreturn  \n{  \n\"model_name\"  \n:  \nmodel_name  \n,  \n\"message\"  \n:  \n\"LeCNN all the images\"  \n}  \nreturn  \n{  \n\"model_name\"  \n:  \nmodel_name  \n,  \n\"message\"  \n:  \n\"Have some residuals\"  \n}  \nTip  \nIf you are wondering, \"AlexNet\", \"ResNet\", and \"LeNet\" are just names of Machine Learning . models"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Return Type and Data Filtering",
+          "chunk_id": "8775bafc2a79dea102321a44dabd5906",
+          "score": 0.61952776,
+          "passage": "How does this work?"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies/",
+          "heading": "Sub-dependencies",
+          "chunk_id": "0eeafaa7b53e5704f4df73d410cd4783",
+          "score": 0.58102995,
+          "passage": "deep  \nwill take care of solving them. FastAPI"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 18,
+      "group": "outside",
+      "question": "How does Python's garbage collector work internally?",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.623483,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/request-files/",
+        "https://fastapi.tiangolo.com/tutorial/handling-errors/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/classes-as-dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies/",
+        "https://fastapi.tiangolo.com/tutorial/response-model/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/request-files/",
+          "heading": "Request Files > File Parameters with",
+          "chunk_id": "143f0dd52d023eb1f65ad712a05e3192",
+          "score": 0.623483,
+          "passage": "without consuming all the memory. You can get metadata from the uploaded file. It has a interface. file-like  \nasync  \nIt exposes an actual Python object that you can pass directly to other libraries that expect a file-like object. SpooledTemporaryFile  \nUploadFile  \n¶  \nhas the following attributes:  \nUploadFile  \n: A with the original file name that was uploaded (e.g. )."
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/handling-errors/",
+          "heading": "Handling Errors > Use > The resulting response",
+          "chunk_id": "9fc73031f2830659d510ca5e71cb2008",
+          "score": 0.6108686,
+          "passage": "dict  \nlist  \nThey are handled automatically by and converted to JSON. FastAPI"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/classes-as-dependencies/",
+          "heading": "Classes as Dependencies > Use it",
+          "chunk_id": "c84c4edd466a3ea3d530286e54a8bec9",
+          "score": 0.5982573,
+          "passage": "skip  \n=  \nskip  \nself  \n. limit  \n=  \nlimit  \n@app  \n. get  \n(  \n\"/items/\"  \n)  \nasync  \ndef  \nread_items  \n(  \ncommons  \n:  \nCommonQueryParams  \n=  \nDepends  \n(  \nCommonQueryParams  \n)):  \nresponse  \n=  \n{}  \nif  \ncommons  \n. q  \n:  \nresponse  \n. update  \n({  \n\"q\"  \n:  \ncommons  \n. q  \n})  \nitems  \n=  \nfake_items_db  \n[  \ncommons  \n. skip  \n:  \ncommons  \n. skip  \n+  \ncommons  \n. limit  \n]  \nresponse  \n. update  \n({  \n\"items\"  \n:  \nitems  \n})  \nreturn  \nresponse  \ncalls the class. This creates an \"instance\" of that class and the instance will be passed as the parameter to your function. FastAPI  \nCommonQueryParams  \ncommons"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies/",
+          "heading": "Sub-dependencies > Using the same dependency multiple times",
+          "chunk_id": "884d09d2b2a982e4bc977114afcefc91",
+          "score": 0.5978287,
+          "passage": "\"cache\"  \nIn an advanced scenario where you know you need the dependency to be called at every step (possibly multiple times) in the same request instead of using the \"cached\" value, you can set the parameter when using :  \nuse_cache=False  \nDepends  \nPython 3.10+  \nPython 3.10+ non-Annotated  \nasync  \ndef  \nneedy_dependency  \n(  \nfresh_value  \n:  \nAnnotated  \n[  \nstr  \n,  \nDepends  \n(  \nget_value  \n,  \nuse_cache  \n=  \nFalse  \n)]):  \nreturn  \n{  \n\"fresh_value\"  \n:  \nfresh_value  \n}  \nTip  \nPrefer to use the version if possible. Annotated  \nasync  \ndef  \nneedy_dependency  \n(  \nfresh_value  \n:  \nstr  \n=  \nDepends  \n(  \nget_value  \n,  \nuse_cache  \n=  \nFalse  \n)):  \nreturn  \n{  \n\"fresh_value\"  \n:  \nfresh_value  \n}"
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "heading": "Response Model - Return Type > Response Model encoding parameters > Use the parameter",
+          "chunk_id": "fba53dc5726ad02d89d23fb8e3a065b1",
+          "score": 0.59592265,
+          "passage": "None  \nThey can be a list ( ), a of , etc. []  \nfloat  \n10.5"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 19,
+      "group": "outside",
+      "question": "What is the difference between TCP and UDP?",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.54620504,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/cors/",
+        "https://fastapi.tiangolo.com/tutorial/encoder/",
+        "https://fastapi.tiangolo.com/tutorial/background-tasks/",
+        "https://fastapi.tiangolo.com/tutorial/body/",
+        "https://fastapi.tiangolo.com/tutorial/response-status-code/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/cors/",
+          "heading": "CORS (Cross-Origin Resource Sharing) > Origin",
+          "chunk_id": "b0d611c05c2a88643792d9ce68e74b2f",
+          "score": 0.54620504,
+          "passage": "Documentation Section: CORS (Cross-Origin Resource Sharing) > Origin\n\n¶  \nAn origin is the combination of protocol ( , ), domain ( , , ), and port ( , , ). http  \nhttps  \nmyapp.com  \nlocalhost  \nlocalhost.tiangolo.com  \n80  \n443  \n8080  \nSo, all these are different origins:  \nhttp://localhost  \nhttps://localhost  \nhttp://localhost:8080  \nEven if they are all in , they use different protocols or ports, so, they are different \"origins\"."
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/encoder/",
+          "heading": "",
+          "chunk_id": "aed954ffe8751c61beb4f57b769afd5e",
+          "score": 0.5243782,
+          "passage": "json.dumps()  \nIt doesn't return a large containing the data in JSON format (as a string). It returns a Python standard data structure (e.g."
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/background-tasks/",
+          "heading": "Background Tasks",
+          "chunk_id": "f961c353c03a99e262e7aed5b829b58b",
+          "score": 0.51871455,
+          "passage": "This includes, for example:  \nEmail notifications sent after performing an action:  \nAs connecting to an email server and sending an email tends to be \"slow\" (several seconds), you can return the response right away and send the email notification in the background. Processing data:  \nFor example, let's say you receive a file that must go through a slow process, you can return a response of \"Accepted\" (HTTP 202) and process the file in the background."
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/body/",
+          "heading": "Request Body",
+          "chunk_id": "57fbdd17269dc8a7f626354b009c854f",
+          "score": 0.5168128,
+          "passage": "Documentation Section: Request Body\n\n¶  \nWhen you need to send data from a client (let's say, a browser) to your API, you send it as a . request body  \nA body is data sent by the client to your API. A body is the data your API sends to the client. request  \nresponse  \nYour API almost always has to send a body. But clients don't necessarily need to send all the time, sometimes they only request a path, maybe with some query parameters, but don't send a body. response  \nrequest bodies  \nTo declare a body, you use models with all their power and benefits. request  \nPydantic  \nNote  \nTo send data, you should use one of: (the most common), , or . POST  \nPUT  \nDELETE  \nPATCH  \nSending a body with a request has an undefined behavior in the specifications, nevertheless, it is supported by FastAPI, only for very complex/extreme use cases. GET  \nAs it is discouraged, the interactive docs with Swagger UI won't show the documentation for the body when using , and proxies in the middle might not support it."
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/response-status-code/",
+          "heading": "Response Status Code > About HTTP status codes",
+          "chunk_id": "0bfacdf87680973f3afdbc3ad5fa4d46",
+          "score": 0.515959,
+          "passage": "201  \nA special case is , \"No Content\". This response is used when there is no content to return to the client, and so the response must not have a body. 204  \nare for \"Redirection\". Responses with these status codes may or may not have a body, except for , \"Not Modified\", which must not have one. 300 - 399  \n304  \nare for \"Client error\" responses. These are the second type you would probably use the most. 400 - 499  \nAn example is , for a \"Not Found\" response. 404  \nFor generic errors from the client, you can just use . 400  \nare for server errors. You almost never use them directly. When something goes wrong at some part in your application code, or server, it will automatically return one of these status codes. 500 - 599  \nTip  \nTo know more about each status code and which code is for what, check the . documentation about HTTP status codes  \nMDN"
+        }
+      ],
+      "retrieval_error": null
+    },
+    {
+      "id": 20,
+      "group": "outside",
+      "question": "How do I create a React component using hooks?",
+      "expected_behavior": "abstain",
+      "expected_sources": [],
+      "top_score": 0.6216448,
+      "retrieved_source_urls": [
+        "https://fastapi.tiangolo.com/tutorial/middleware/",
+        "https://fastapi.tiangolo.com/tutorial/path-operation-configuration/",
+        "https://fastapi.tiangolo.com/tutorial/first-steps/",
+        "https://fastapi.tiangolo.com/tutorial/dependencies/"
+      ],
+      "expected_source_urls_found": 0,
+      "num_expected_sources": 0,
+      "sources": [
+        {
+          "source_number": 1,
+          "url": "https://fastapi.tiangolo.com/tutorial/middleware/",
+          "heading": "Middleware > Create a middleware",
+          "chunk_id": "a069b5f9f6f76a5b2147f77596b1607d",
+          "score": 0.6216448,
+          "passage": "Documentation Section: Middleware > Create a middleware\n\nCreate a middleware"
+        },
+        {
+          "source_number": 2,
+          "url": "https://fastapi.tiangolo.com/tutorial/path-operation-configuration/",
+          "heading": "Path Operation Configuration > Description from docstring",
+          "chunk_id": "5e104e1b5772b24cae3c3de5ff236a96",
+          "score": 0.6103976,
+          "passage": "post  \n(  \n\"/items/\"  \n,  \nsummary  \n=  \n\"Create an item\"  \n)  \nasync  \ndef  \ncreate_item  \n(  \nitem  \n:  \nItem  \n)  \n->  \nItem  \n:  \n\"\"\"  \nCreate an item with all the information:  \n- **name**: each item must have a name  \n- **description**: a long description  \n- **price**: required  \n- **tax**: if the item doesn't have tax, you can omit this  \n- **tags**: a set of unique tag strings for this item  \n\"\"\"  \nreturn  \nitem  \nIt will be used in the interactive docs:"
+        },
+        {
+          "source_number": 3,
+          "url": "https://fastapi.tiangolo.com/tutorial/middleware/",
+          "heading": "Middleware > Create a middleware > Before and after the",
+          "chunk_id": "103424156554fe1bd4e67e76413eb776",
+          "score": 0.60051644,
+          "passage": "Documentation Section: Middleware > Create a middleware > Before and after the\n\nBefore and after the"
+        },
+        {
+          "source_number": 4,
+          "url": "https://fastapi.tiangolo.com/tutorial/first-steps/",
+          "heading": "",
+          "chunk_id": "75beeb89d93e0ae93627334b9ada1ca6",
+          "score": 0.5944744,
+          "passage": "¶  \nImport . FastAPI  \nCreate an instance. app  \nWrite a using decorators like ."
+        },
+        {
+          "source_number": 5,
+          "url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "heading": "Dependencies > First Steps > Create a dependency, or \"dependable\"",
+          "chunk_id": "198d7921ddcbe2e5993cc9af20fd501d",
+          "score": 0.59427583,
+          "passage": "Documentation Section: Dependencies > First Steps > Create a dependency, or \"dependable\""
+        }
+      ],
+      "retrieval_error": null
+    }
+  ]
+}
